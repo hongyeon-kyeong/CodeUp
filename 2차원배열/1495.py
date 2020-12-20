@@ -1,3 +1,7 @@
+'''
+if countinue 문으로 하니까 안됐다. 왜지?
+'''
+
 n, m , k = map(int, input().split())
 
 ary = [[0 for _ in range(m)] for _ in range(n)]
