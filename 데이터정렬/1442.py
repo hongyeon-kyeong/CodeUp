@@ -1,29 +1,25 @@
 '''
-버블 정렬
-n = int(input())
-data = list()
-
-for i in range(n) :
-	data.append(int(input()))
+선택 정렬
 '''
 import sys
 n = int(sys.stdin.readline().rstrip())
 data = list()
-for i in range(n) :
+
+for _ in range(n) :
 	data.append(int(sys.stdin.readline().rstrip()))
 
-for i in range(1,n) :
-	for j in range(n-i) :
-		if data[j] > data[j+1] :
-			temp = data[j]
-			data[j] = data[j+1]
-			data[j+1] = temp
+for i in range(n) :
+	min = i
+	for j in range(i+1, n) :
+		if data[min] > data[j] :
+			min = j
+	temp = data[i]
+	data[i] = data[min]
+	data[min] = temp
 
 for d in data :
 	print(d)
 
-#print(data)
-#print(" ".join(map(str,data)))
 
 '''
 파이썬 시간초과 이슈로 아래와 같이 제출
