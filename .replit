@@ -1,2 +1,2 @@
 language = "bash"
-run = "python ./중첩반복문/1087.py"
+run = "python ./데이터정렬/1441.py"
