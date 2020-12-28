@@ -1,2 +1,2 @@
 language = "bash"
-run = "python ./재귀함수/1916.py"
+run = "python ./탐색기반설계/2652.py"
